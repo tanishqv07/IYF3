@@ -1,0 +1,73 @@
+body,html
+{
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+.bgcolor
+{
+	/*the img for background*/
+	background-image: url(https://hindi.holidayrider.com/wp-content/uploads/2019/01/compressed-obfq.jpg);
+	/*blur effect manipulation*/
+    filter:blur(5px);
+    -webkit-filter: blur(5px);
+    /*full height*/
+    height: 100%;
+    max-width: auto;
+    /*center the image and scale it accordingly*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*position the text in the middle of the page*/
+.container
+{
+	background-color: rgb(0, 0, 0);
+	/*fallback color*/
+	background-color: rgba(0, 0, 0, 0.4);/*black with opacity see through*/
+	color: #fff;
+    font-weight: bold;
+    border: 8px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+/*form styling*/
+.form
+{
+  font-family: "poppins"sans-serif;
+}
+/*button styling*/
+.form button
+{
+	border-radius: 20px;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color:#008080;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	font-family: arial;
+}
+.form button:hover
+{
+	background-color: #2f4f4f;
+	opacity: 0.8;
+	font-size: 16px;
+}
+@media screen and (max-width: 600px)
+{
+	.form,.container,.form button
+	{
+     width: auto;
+     margin-top: 0;
+	}
+}

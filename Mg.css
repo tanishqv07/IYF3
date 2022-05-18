@@ -1,0 +1,33 @@
+/*inside styling of search bar*/
+.Search input
+{ 
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 1.5);
+  float: right;
+  padding: 6px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%,10%);
+  font-size: 17px;
+  font-family: helvantica , sans-serif;
+  width: 65%;
+}
+/*searchbar effect*/
+@media screen (max-width: 600px)
+{
+  .Search{
+  	position:absolute;
+  	top:30%;
+  	left:50%;
+  	transform: translate(-50%,30%);
+  	float: none;
+  	left: 50%;
+  	top: 30%;
+  	display: block;
+  	text-align: left;
+  	width: 100%;
+  	margin: 0%;
+  	padding: 14px;
+  }
+}
